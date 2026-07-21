@@ -1,0 +1,103 @@
+@baseUrl = https://fundo-w77b.onrender.com
+
+###Register User
+
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+"name":"tester",
+"email": "test1@example.com",
+"password": "12345678"
+}
+
+###
+
+# Login User
+
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+"email": "test1@example.com",
+"password": "12345678"
+}
+
+###
+
+# Get Current User (Protected Route)
+
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGFmNzYxZi0zODk4LTQ4ODgtYTNkMS00ZGJmYjc3N2QxNWMiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5Nzk4MDE1LCJleHAiOjE3Nzk4MDE2MTV9.UTckZry31tgScYfx45adX1VYsNibae0Lk-Er1PU8Mjg
+
+# Refresh Access Token
+###
+POST {{baseUrl}}/api/auth/refresh
+Cookie: refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwNGRiMzQ0Yi03ODU1LTRiZTYtOTk4Zi1kMjk3MjNiNGMyZjAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5Nzc1NTc0LCJleHAiOjE3Nzk3NzkxNzR9.IAcQnmgqiUNbXaHWwcgP2w-DgklwGAomKIo1ujSoN5c
+
+###
+
+# Logout User
+
+POST {{baseUrl}}/api/auth/logout
+Cookie: refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NDVjOTNjNy0zYmU5LTRlMjAtYjQ4YS04ZjQ5MmJkZjJlZDIiLCJpYXQiOjE3Nzc4MTg5OTIsImV4cCI6MTc3ODQyMzc5Mn0.NlyjBDtK5PIUI3WNU9VSsV-4iRh32NtavrQw16nR3GE
+
+
+###Sent otp
+POST {{baseUrl}}/api/auth/send-otp 
+Content-Type: application/json
+    
+{
+    "email":"rahilnazar1234@gmail.com"
+}
+###Verify otp
+
+POST {{baseUrl}}/api/auth/verify-otp 
+Content-Type: application/json
+
+{
+    "email":"rahilnazar1234@gmail.com",
+    "otp":"428810"
+}
+
+###
+POST {{baseUrl}}/api/auth/send-otp
+Content-Type: application/json
+
+{ "email": "test@gmail.com" }
+
+###
+POST {{baseUrl}}/api/auth/send-otp
+Content-Type: application/json
+
+{
+  "email": "tested.3.3.54@gmail.com"
+}
+
+###
+POST {{baseUrl}}/api/auth/verify-otp   
+Content-Type: application/json
+
+{ 
+    "email": "tested.3.3.54@gmail.com", 
+    "otp": "395816" 
+}
+
+###
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "tested.3.3.54@gmail.com",
+  "password": "Test@1234"
+}
+
+###
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "rahilnazar1234@gmail.com",
+  "password": "Rayan@5452"
+}

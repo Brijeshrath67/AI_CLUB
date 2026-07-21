@@ -1,0 +1,55 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "worker": "node src/worker/emailWorker.js",
+    "start": "concurrently \"node index.js\" \"node src/worker/emailWorker.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "@sendgrid/mail": "^8.1.6",
+    "bcryptjs": "^3.0.3",
+    "bullmq": "^5.78.0",
+    "cloudinary": "^2.10.0",
+    "concurrently": "^10.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.11.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^8.0.7",
+    "nodemon": "^3.1.14",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.20.0",
+    "prisma": "^6.19.3",
+    "razorpay": "^2.9.6",
+    "redis": "^5.12.1",
+    "resend": "^6.12.4",
+    "socket.io": "^4.8.3",
+    "tslib": "^2.8.1",
+    "uuid": "^14.0.0",
+    "zod": "^4.4.1"
+  },
+  "overrides": {
+    "cloudinary": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0"
+  }
+}

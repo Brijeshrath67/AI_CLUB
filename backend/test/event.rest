@@ -1,0 +1,39 @@
+@baseUrl = https://fundo-w77b.onrender.com
+
+###
+POST {{baseUrl}}/api/events
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3Zjk3Y2Q1Zi04MWFiLTQ2NjYtYWNiNC0wMWI1OGFkNGVhYjMiLCJlbWFpbCI6InJhaGlsbmF6YXIxMjM0QGdtYWlsLmNvbSIsImlhdCI6MTc4MDg4ODM2MiwiZXhwIjoxNzgwODkxOTYyfQ.MQ22bRFzvntARWS4fhKP_err-3fjKlUPpjXfukOuS7k
+Form-data:
+  title: "Test Event"
+  description: "Test description"
+  date: "2026-06-01"
+  location: "Kochi"
+  price: "500"
+  capacity: "100"
+  type: "PUBLIC"
+  image:filename="download.jpeg"
+
+###
+GET {{baseUrl}}/api/events
+
+###
+GET {{baseUrl}}/api/events/cmpm92pmd0002ij1l1umzo0pe
+
+###
+GET {{baseUrl}}/api/dashboard/stats
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwNGRiMzQ0Yi03ODU1LTRiZTYtOTk4Zi1kMjk3MjNiNGMyZjAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5NzcxMzU0LCJleHAiOjE3Nzk3NzQ5NTR9.PgmbR1G8wTJdHTYdE_f_u4Sb5sKv3xSvhh04IyCylwY
+
+###
+POST {{baseUrl}}/api/transactions/order
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwNGRiMzQ0Yi03ODU1LTRiZTYtOTk4Zi1kMjk3MjNiNGMyZjAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5NzcxMzU0LCJleHAiOjE3Nzk3NzQ5NTR9.PgmbR1G8wTJdHTYdE_f_u4Sb5sKv3xSvhh04IyCylwY
+Content-Type: application/json
+
+{ "eventId": "cmpm771tq0000ijqqzt0ocn9e" }
+
+###
+GET {{baseUrl}}/api/transactions/my
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwNGRiMzQ0Yi03ODU1LTRiZTYtOTk4Zi1kMjk3MjNiNGMyZjAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5NzcxMzU0LCJleHAiOjE3Nzk3NzQ5NTR9.PgmbR1G8wTJdHTYdE_f_u4Sb5sKv3xSvhh04IyCylwY
+
+###
+GET {{baseUrl}}/api/transactions/all
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwNGRiMzQ0Yi03ODU1LTRiZTYtOTk4Zi1kMjk3MjNiNGMyZjAiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5NzcxMzU0LCJleHAiOjE3Nzk3NzQ5NTR9.PgmbR1G8wTJdHTYdE_f_u4Sb5sKv3xSvhh04IyCylwY

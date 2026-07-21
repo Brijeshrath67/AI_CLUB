@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:8000
+
+GET {{baseUrl}}/api/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGFmNzYxZi0zODk4LTQ4ODgtYTNkMS00ZGJmYjc3N2QxNWMiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5Nzk4MDE1LCJleHAiOjE3Nzk4MDE2MTV9.UTckZry31tgScYfx45adX1VYsNibae0Lk-Er1PU8Mjg
+
+
+###
+PUT {{baseUrl}}/api/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGFmNzYxZi0zODk4LTQ4ODgtYTNkMS00ZGJmYjc3N2QxNWMiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc5Nzk4MDE1LCJleHAiOjE3Nzk4MDE2MTV9.UTckZry31tgScYfx45adX1VYsNibae0Lk-Er1PU8Mjg
+Content-Type: application/json
+
+{
+   "name":"Rahil",
+   "password":"12345678"
+}

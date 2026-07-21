@@ -1,0 +1,66 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: fundo-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - fundo
+
+  user-portal:
+    build:
+      context: ./user-portal
+      dockerfile: Dockerfile
+    container_name: fundo-user-portal
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - fundo
+
+  organiser-portal:
+    build:
+      context: ./organiser-portal
+      dockerfile: Dockerfile
+    container_name: fundo-organiser-portal
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - fundo
+
+  redis:
+    image: redis:7-alpine
+    container_name: fundo-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - fundo
+
+volumes:
+  redis_data:
+
+networks:
+  fundo:
+    driver: bridge

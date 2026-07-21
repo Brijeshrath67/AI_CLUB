@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-500: #7c5cfc;
+  --color-brand-600: #6b4ef0;
+  --color-bg-main: #050508;
+  --color-bg-card: #0e0b18;
+  --color-bg-elevated: #13102a;
+  --color-border-main: #1e1a35;
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Syne", sans-serif;
+}
+
+spline-viewer::part(logo) {
+  display: none;
+}
+
+@layer base {
+  body {
+    background-color: #050508;
+    color: white;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Force spline-viewer web component to fill its parent */
+spline-viewer {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hide the "Built with Spline" watermark */
+spline-viewer::part(logo) {
+  display: none !important;
+}

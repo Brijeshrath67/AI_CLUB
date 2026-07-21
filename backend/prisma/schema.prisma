@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id             String           @id @default(auto()) @db.ObjectId @map("_id")
+  name           String
+  email          String           @unique
+  password       String?
+  role           user_role        @default(student)
+  is_verified    Boolean          @default(false)
+  avatar         String?
+  googleId       String?          @unique
+  created_at     DateTime         @default(now())
+  updated_at     DateTime         @default(now()) @updatedAt
+  refresh_tokens refresh_tokens[]
+  events         Event[]
+  transactions   Transaction[]
+  teamsLed       Team[]
+}
+
+model refresh_tokens {
+  id         String   @id @default(auto()) @db.ObjectId @map("_id")
+  user_id    String   @db.ObjectId
+  token_hash String   @unique
+  expires_at DateTime
+  created_at DateTime @default(now())
+  users      users    @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
+
+enum user_role {
+  student
+  organiser
+}
+
+model Event {
+  id            String   @id @default(auto()) @db.ObjectId @map("_id")
+  title         String
+  description   String
+  date          DateTime
+  location      String
+  price         Float
+  capacity      Int
+  image         String
+  type          EventType @default(PUBLIC)
+  code          String?  @unique
+  createdBy     String   @db.ObjectId
+  user          users    @relation(fields: [createdBy], references: [id])
+  transactions  Transaction[]
+  isHackathon   Boolean  @default(false)
+  maxTeamSize   Int?
+  minTeamSize   Int?
+  problemStatements ProblemStatement[]
+  teams         Team[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([createdBy, title])
+}
+
+model Transaction {
+  id        String   @id @default(auto()) @db.ObjectId @map("_id")
+  eventId   String   @db.ObjectId
+  userId    String   @db.ObjectId
+  amount    Float
+  status    PaymentStatus @default(PENDING)
+  razorpayOrderId   String? @unique
+  razorpayPaymentId String?
+  razorpayWebhookId String? @unique
+  event     Event    @relation(fields: [eventId], references: [id])
+  user      users    @relation(fields: [userId], references: [id])
+  team      Team?
+  createdAt DateTime @default(now())
+}
+
+model ProblemStatement {
+  id          String   @id @default(auto()) @db.ObjectId @map("_id")
+  eventId     String   @db.ObjectId
+  title       String
+  description String
+  event       Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  teams       Team[]
+  createdAt   DateTime @default(now())
+}
+
+model Team {
+  id                String   @id @default(auto()) @db.ObjectId @map("_id")
+  name              String
+  eventId           String   @db.ObjectId
+  leaderId          String   @db.ObjectId
+  members           Json
+  problemStatementId String?  @db.ObjectId
+  transactionId     String?  @unique @db.ObjectId
+  registrationId    String?  @unique
+  event             Event    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  leader            users    @relation(fields: [leaderId], references: [id])
+  problemStatement  ProblemStatement? @relation(fields: [problemStatementId], references: [id])
+  transaction       Transaction? @relation(fields: [transactionId], references: [id])
+  createdAt         DateTime @default(now())
+}
+
+enum EventType {
+  PUBLIC
+  PRIVATE
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}
