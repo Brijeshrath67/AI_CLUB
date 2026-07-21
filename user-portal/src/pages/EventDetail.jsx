@@ -92,7 +92,7 @@ export default function EventDetail() {
 
   const handleShare = async () => {
     const shareUrl = window.location.href;
-    const shareTitle = event?.title || 'Fundo Event';
+    const shareTitle = event?.title || 'ML Hive Event';
     
     // Copy the link to clipboard unconditionally
     try {
@@ -108,7 +108,7 @@ export default function EventDetail() {
       try {
         await navigator.share({
           title: shareTitle,
-          text: `Check out this event on Fundo: ${shareTitle}`,
+          text: `Check out this event on ML Hive: ${shareTitle}`,
           url: shareUrl,
         });
       } catch (err) {
@@ -161,7 +161,7 @@ export default function EventDetail() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_your_key',
         amount: order.amount,
         currency: order.currency,
-        name: 'Fundo',
+        name: 'ML Hive',
         description: event.title,
         order_id: order.id,
         handler: async function (response) {
@@ -362,7 +362,7 @@ export default function EventDetail() {
                     event.price === 0 ? 'Register Now' : 'Make Payment to Event'
                   )}
                 </button>
-                <p className="text-center text-[10px] text-white/40 mt-3 tracking-wide">Secure checkout powered by Fundo payments.</p>
+                <p className="text-center text-[10px] text-white/40 mt-3 tracking-wide">Secure checkout powered by ML Hive payments.</p>
               </div>
             )}
           </div>

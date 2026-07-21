@@ -9,11 +9,11 @@ export default function Features() {
         {/* Header */}
         <div className="text-center space-y-6">
           <div className="inline-block px-4 py-1.5 rounded-full bg-[#8155ff]/10 border border-[#8155ff]/20 text-[#8155ff] text-sm font-medium backdrop-blur-sm">
-            The Fundo Vision
+            The ML Hive Vision
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
             Collecting money for college events is <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">broken</span>.<br/>
-            Fundo fixes this <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8155ff] to-[#a88bff]">entirely.</span>
+            ML Hive fixes this <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8155ff] to-[#a88bff]">entirely.</span>
           </h1>
           <p className="text-xl text-white/60 max-w-2xl mx-auto leading-relaxed">
             A platform where students make payments to events online — and everything is tracked automatically.
@@ -43,7 +43,7 @@ export default function Features() {
             <div className="bg-white/5 border border-white/10 rounded-[24px] p-8 hover:border-[#8155ff]/30 transition-colors">
               <Globe className="text-[#8155ff] w-12 h-12 mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Public Event</h3>
-              <p className="text-white/60 leading-relaxed mb-6">Visible to everyone on the main dashboard when they open Fundo. Anyone from the campus can see it, click on it, and pay to register.</p>
+              <p className="text-white/60 leading-relaxed mb-6">Visible to everyone on the main dashboard when they open ML Hive. Anyone from the campus can see it, click on it, and pay to register.</p>
               <div className="bg-[#8155ff]/10 text-[#8155ff] px-4 py-2 rounded-lg text-sm font-medium inline-block">
                 Best for: College fests, competitions, seminars
               </div>
@@ -68,8 +68,8 @@ export default function Features() {
             {[
               { step: 1, title: 'Student opens the event', desc: 'Either from the dashboard (public) or from the link shared by the organiser (private).' },
               { step: 2, title: 'Student clicks Pay', desc: 'Razorpay checkout window opens. They can pay via UPI, card, net banking, anything.' },
-              { step: 3, title: 'Payment goes to Razorpay', desc: 'Razorpay processes the money and sends a secret signal (webhook) to Fundo backend saying "this person paid".' },
-              { step: 4, title: 'Fundo verifies the signal', desc: 'Backend checks a secret signature to make sure the signal is genuinely from Razorpay and not a fake. Security layer.' },
+              { step: 3, title: 'Payment goes to Razorpay', desc: 'Razorpay processes the money and sends a secret signal (webhook) to ML Hive backend saying "this person paid".' },
+              { step: 4, title: 'ML Hive verifies the signal', desc: 'Backend checks a secret signature to make sure the signal is genuinely from Razorpay and not a fake. Security layer.' },
               { step: 5, title: 'Record is saved permanently', desc: 'Database now has: who paid, how much, at what time. Permanently. No manual entry needed.' },
               { step: 6, title: 'Dashboard updates live', desc: 'Powered by Socket.io, the moment a payment is confirmed, the organiser sees it appear in real time without refreshing.' },
             ].map((item, i) => (

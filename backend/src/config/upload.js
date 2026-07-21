@@ -11,7 +11,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
     cloudinary,
     params : {
-        folder:'fundo/events',
+        folder:'ml-hive/events',
         allowed_formats:['jpg','jpeg','png','webp'],
     },
 });
@@ -19,7 +19,7 @@ const storage = new CloudinaryStorage({
 const avatarStorage = new CloudinaryStorage({
     cloudinary,
     params : {
-        folder:'fundo/avatars',
+        folder:'ml-hive/avatars',
         allowed_formats:['jpg','jpeg','png','webp'],
     },
 });

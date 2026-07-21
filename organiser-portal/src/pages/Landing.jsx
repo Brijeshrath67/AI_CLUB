@@ -94,7 +94,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ─── WHY FUNDO ─── */}
+      {/* ─── WHY ML HIVE ─── */}
       <section className="py-28 px-6 lg:px-12 max-w-[1200px] mx-auto relative z-10">
         <div className="text-center mb-16">
           <p className="text-[11px] tracking-widest uppercase text-[#7c5cfc] font-semibold mb-4">Organiser Experience</p>
@@ -131,7 +131,7 @@ export default function Landing() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#7c5cfc]/10 rounded-full blur-[100px] pointer-events-none" />
           <div className="relative z-10">
             <h2 className="text-[34px] md:text-[44px] font-bold tracking-tight mb-4">Ready to launch your event?</h2>
-            <p className="text-[16px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">Join clubs and departments across campus leveraging Fundo for easy payments.</p>
+            <p className="text-[16px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">Join clubs and departments across campus leveraging ML Hive for easy payments.</p>
             <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
               {user ? (
                 <Link to="/events/create" className="group flex items-center gap-2 bg-[#7c5cfc] hover:bg-[#6b4ef0] text-white px-8 py-3.5 rounded-full font-semibold text-[14px] transition-all shadow-[0_4px_24px_rgba(124,92,252,0.4)]">

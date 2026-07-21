@@ -14,11 +14,11 @@ const helpTopics = [
     icon: <Book className="text-[#8155ff]" size={20} />,
     color: 'from-[#8155ff]/20 to-transparent',
     border: 'border-[#8155ff]/30',
-    desc: 'Learn the basics of Fundo and how to make event payments.',
+    desc: 'Learn the basics of ML Hive and how to make event payments.',
     articles: [
       {
-        q: "How to set up your Fundo account",
-        a: "To set up your Fundo account, click 'Sign Up' in the top-right corner. Fill in your name, email, and password. Confirm your account by entering the OTP sent to your email. You are then ready to start browsing and joining events!"
+        q: "How to set up your ML Hive account",
+        a: "To set up your ML Hive account, click 'Sign Up' in the top-right corner. Fill in your name, email, and password. Confirm your account by entering the OTP sent to your email. You are then ready to start browsing and joining events!"
       },
       {
         q: "Making your first event payment",
@@ -62,11 +62,11 @@ const helpTopics = [
     articles: [
       {
         q: "Is my payment information secure?",
-        a: "Yes, Fundo utilizes Razorpay's secure checkout environment to process all ticket transactions safely."
+        a: "Yes, ML Hive utilizes Razorpay's secure checkout environment to process all ticket transactions safely."
       },
       {
-        q: "Simulating test payments on Fundo",
-        a: "Since Fundo is currently in demonstration mode, you can use Razorpay's test credentials (e.g., test cards or UPI options) to simulate successful or failed bookings."
+        q: "Simulating test payments on ML Hive",
+        a: "Since ML Hive is currently in demonstration mode, you can use Razorpay's test credentials (e.g., test cards or UPI options) to simulate successful or failed bookings."
       }
     ]
   },

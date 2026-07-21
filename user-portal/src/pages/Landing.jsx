@@ -44,11 +44,11 @@ export default function Landing() {
         <div className="flex flex-col items-center gap-4">
           {/* Pulsing Logo badge */}
           <div className="w-20 h-20 rounded-2xl bg-black border border-white/10 flex items-center justify-center shadow-2xl shadow-white/10 animate-pulse">
-            <img src="/logo.png" alt="Fundo Logo" className="w-14 h-14 object-contain" />
+            <img src="/logo.png" alt="ML Hive Logo" className="w-14 h-14 object-contain" />
           </div>
           {/* Loading status */}
           <div className="flex flex-col items-center gap-1.5 mt-2">
-            <span className="text-[13px] font-bold tracking-widest text-white/90 uppercase">Fundo</span>
+            <span className="text-[13px] font-bold tracking-widest text-white/90 uppercase">ML Hive</span>
             <div className="flex items-center gap-1.5 text-[11px] text-white/40 tracking-wider">
               <span>Initializing 3D experience</span>
               <span className="flex gap-0.5">
@@ -126,12 +126,12 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ─── WHY FUNDO ─── */}
+      {/* ─── WHY ML HIVE ─── */}
       <section className="py-28 px-6 lg:px-12 max-w-[1200px] mx-auto">
         <div className="text-center mb-16">
-          <p className="text-[11px] tracking-widest uppercase text-[#7c5cfc] font-semibold mb-4">Why Fundo</p>
+          <p className="text-[11px] tracking-widest uppercase text-[#7c5cfc] font-semibold mb-4">Why ML Hive</p>
           <h2 className="text-[38px] md:text-[48px] font-bold tracking-tight leading-tight mb-4">
-            Why choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a78bff] to-[#7c5cfc]">Fundo</span>?
+            Why choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a78bff] to-[#7c5cfc]">ML Hive</span>?
           </h2>
           <p className="text-[16px] text-white/35 max-w-lg mx-auto leading-relaxed">
             Built for college organizers who want to move fast without complex tools.
@@ -163,7 +163,7 @@ export default function Landing() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#7c5cfc]/10 rounded-full blur-[100px] pointer-events-none" />
           <div className="relative z-10">
             <h2 className="text-[34px] md:text-[44px] font-bold tracking-tight mb-4">Ready to make a payment?</h2>
-            <p className="text-[16px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">Join thousands of users who trust Fundo for secure event payments.</p>
+            <p className="text-[16px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">Join thousands of users who trust ML Hive for secure event payments.</p>
             <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
               <Link to="/events" className="group flex items-center gap-2 bg-[#7c5cfc] hover:bg-[#6b4ef0] text-white px-8 py-3.5 rounded-full font-semibold text-[14px] transition-all shadow-[0_4px_24px_rgba(124,92,252,0.4)]">
                 Make Payment to Event <ArrowRight size={15} className="group-hover:translate-x-0.5 transition-transform" />

@@ -107,16 +107,16 @@ const handleSubmit = async (e) => {
           <div className="flex flex-col items-center relative">
             <Link to="/" className="flex flex-col items-center gap-1 hover:opacity-80 transition-opacity cursor-pointer">
               <div className="w-10 h-10 rounded-xl bg-black border border-white/10 flex items-center justify-center shadow-lg shadow-white/10">
-                <img src="/logo.png" alt="Fundo Logo" className="w-8 h-8 object-contain" />
+                <img src="/logo.png" alt="ML Hive Logo" className="w-8 h-8 object-contain" />
               </div>
-              <span className="font-heading font-bold text-lg tracking-tight text-white">Fundo</span>
+              <span className="font-heading font-bold text-lg tracking-tight text-white">ML Hive</span>
             </Link>
           </div>
 
           <div className="space-y-1 pt-1">
             <CardTitle className="text-xl font-heading text-white font-medium">Create Account</CardTitle>
             <CardDescription className="text-white/60 text-[11px]">
-              Join Fundo to manage your events today.
+              Join ML Hive to manage your events today.
             </CardDescription>
           </div>
         </CardHeader>

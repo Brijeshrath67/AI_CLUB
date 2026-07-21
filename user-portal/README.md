@@ -1,4 +1,4 @@
-# ⚡️ Fundo
+# ⚡️ ML Hive
 
 **A platform where organisers create events and students pay online — and everything is tracked automatically.**
 
@@ -10,14 +10,14 @@
 Collecting money for college events is broken. 
 Someone wants to organise a trip or an event. They ask 20 people for money. Some pay in cash, some say "I'll pay later", some forget. The organiser has no list, no record, no idea who paid ₹500 and who paid nothing. At the end, it's a mess of screenshots and WhatsApp messages. 
 
-**Fundo fixes this entirely.**
+**ML Hive fixes this entirely.**
 
 ---
 
 ## 🎟️ The Two Types of Events
 
 ### 1. Public Event
-- Visible to everyone on the main dashboard when they open Fundo.
+- Visible to everyone on the main dashboard when they open ML Hive.
 - Anyone from the campus can see it, click on it, and pay to register.
 - **Best for:** College fests, competitions, seminars — events that are open to everyone.
 
@@ -32,8 +32,8 @@ Someone wants to organise a trip or an event. They ask 20 people for money. Some
 
 1. **Student opens the event** — either from the dashboard (public) or from the link shared by the organiser (private).
 2. **Student clicks Pay** — Razorpay's checkout window opens. They can pay via UPI, card, net banking, anything.
-3. **Payment goes to Razorpay** — Razorpay processes the money and sends a secret signal (called a webhook) to Fundo's backend saying "this person paid".
-4. **Fundo verifies the signal** — the backend checks a secret signature to make sure the signal is genuinely from Razorpay and not a fake. This is the security layer.
+3. **Payment goes to Razorpay** — Razorpay processes the money and sends a secret signal (called a webhook) to ML Hive's backend saying "this person paid".
+4. **ML Hive verifies the signal** — the backend checks a secret signature to make sure the signal is genuinely from Razorpay and not a fake. This is the security layer.
 5. **Record is saved** — the database now has: who paid, how much, at what time. Permanently. No manual entry needed.
 6. **Organiser's dashboard updates live** — the moment a payment is confirmed, the organiser sees it appear in real time without refreshing the page. *(Powered by Socket.io)*
 
@@ -57,8 +57,8 @@ Someone wants to organise a trip or an event. They ask 20 people for money. Some
 - **React:** The frontend that students and organisers see and interact with.
 - **Express + PostgreSQL:** The backend that stores all data (events, users, payments) and handles all logic.
 - **JWT (JSON Web Tokens):** How the system knows who is logged in. The organiser and student each get a token that proves their identity.
-- **Razorpay:** The payment gateway. Handles the actual money movement. Fundo never directly touches the card or UPI details.
-- **Webhook + HMAC verification:** Razorpay secretly tells Fundo "payment done". Fundo checks a digital signature to confirm it's real.
+- **Razorpay:** The payment gateway. Handles the actual money movement. ML Hive never directly touches the card or UPI details.
+- **Webhook + HMAC verification:** Razorpay secretly tells ML Hive "payment done". ML Hive checks a digital signature to confirm it's real.
 - **Socket.io:** Keeps the organiser's dashboard alive with real-time updates. When a payment lands, it appears on screen instantly.
 - **BullMQ:** A background job queue. Things like sending confirmation emails happen in the background without slowing down the payment response.
 - **Docker:** Packages the whole application so it can be deployed and run anywhere.

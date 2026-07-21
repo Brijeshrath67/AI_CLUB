@@ -1,16 +1,12 @@
-# ⚡️ Fundo
+# ⚡️ ML Hive
 
-**Fundo is a college event payment platform for organisers and students.**
+**ML Hive is a college event payment platform for organisers and students.**
 It helps organisers create events, collect online payments via Razorpay, and track every transaction in one place.
 
-**Live Demo:** https://fundo-doe.pages.dev/
-
----
-
-## 🚀 What Fundo Solves
+## 🚀 What ML Hive Solves
 
 College event payments are often handled with cash, screenshots, and scattered messages.
-Fundo provides a single system for:
+ML Hive provides a single system for:
 
 - Creating event registration pages.
 - Collecting payments online via Razorpay.
@@ -54,7 +50,7 @@ Fundo provides a single system for:
 ## 📁 Project Structure
 
 ```
-fundo/
+ml-hive/
 ├── backend/
 │   ├── index.js
 │   ├── package.json
@@ -98,7 +94,7 @@ Ensure **PostgreSQL** and **Redis** servers are running locally on your system.
 2. Create a `backend/.env` file with the following variables:
    ```env
    PORT=8000
-   DATABASE_URL="postgresql://username:password@localhost:5432/fundo"
+   DATABASE_URL="postgresql://username:password@localhost:5432/ml-hive"
    ACCESS_TOKEN_SECRET="your_access_token_secret"
    REFRESH_TOKEN_SECRET="your_refresh_token_secret"
    SALT=10

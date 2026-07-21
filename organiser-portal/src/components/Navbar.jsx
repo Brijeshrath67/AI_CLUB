@@ -59,12 +59,12 @@ export default function Navbar() {
           <div className="w-10 h-10 rounded-2xl bg-black border border-white/10 flex items-center justify-center shadow-lg shadow-white/10">
             <img 
               src="/logo.png" 
-              alt="Fundo Logo" 
+              alt="ML Hive Logo" 
               className="w-8 h-8 object-contain" 
             />
           </div>
           <span className="font-extrabold text-xl tracking-tight text-white hidden sm:block bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-purple-200">
-            Fundo Organiser
+            ML Hive Organiser
           </span>
         </Link>
 

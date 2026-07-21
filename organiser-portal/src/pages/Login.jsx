@@ -59,7 +59,7 @@ export default function Login() {
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
               >
-                <img src="/logo.png" alt="Fundo Logo" className="w-12 h-12 object-contain" />
+                <img src="/logo.png" alt="ML Hive Logo" className="w-12 h-12 object-contain" />
               </motion.div>
               
               <div className="w-32 h-[3px] bg-white/5 rounded-full overflow-hidden relative">

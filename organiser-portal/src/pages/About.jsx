@@ -11,7 +11,7 @@ export default function About() {
           About The Creator
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-          Meet the mind behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8155ff] to-[#a88bff]">Fundo</span>
+          Meet the mind behind <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8155ff] to-[#a88bff]">ML Hive</span>
         </h1>
         
         <div className="bg-gradient-to-br from-[#1c133a]/50 to-[#0e0a1f]/50 backdrop-blur-md border border-white/10 rounded-[32px] p-8 md:p-12 mt-12 flex flex-col md:flex-row items-center gap-10 hover:border-[#8155ff]/30 transition-colors text-left relative overflow-hidden">
@@ -27,7 +27,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-white mb-2">Muhammed Rahil Nazar</h2>
             <p className="text-[#8155ff] font-medium mb-6">Full Stack Developer</p>
             <p className="text-white/60 leading-relaxed mb-8 text-sm md:text-base">
-              I built Fundo to simplify the way we manage events and handle payments. My focus is on creating a seamless, robust, and beautiful experience that helps organizers focus on their audience rather than administrative headaches.
+              I built ML Hive to simplify the way we manage events and handle payments. My focus is on creating a seamless, robust, and beautiful experience that helps organizers focus on their audience rather than administrative headaches.
             </p>
             
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">

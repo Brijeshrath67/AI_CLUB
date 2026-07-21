@@ -124,7 +124,7 @@ export default function PrivateInvite() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_your_key',
         amount: order.amount,
         currency: order.currency,
-        name: 'Fundo',
+        name: 'ML Hive',
         description: event.title,
         order_id: order.id,
         handler: async function (response) {

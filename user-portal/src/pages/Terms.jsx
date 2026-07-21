@@ -9,7 +9,7 @@ export default function Terms() {
     {
       icon: <Shield className="text-[#8155ff]" size={20} />,
       title: "1. Acceptance of Terms",
-      content: "Welcome to Fundo. By accessing, browsing, or using our ticketing and event organization platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services."
+      content: "Welcome to ML Hive. By accessing, browsing, or using our ticketing and event organization platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services."
     },
     {
       icon: <FileText className="text-[#10b981]" size={20} />,
@@ -19,22 +19,22 @@ export default function Terms() {
     {
       icon: <CheckCircle2 className="text-[#3b82f6]" size={20} />,
       title: "3. Ticket Bookings & Payments",
-      content: "All payments and registrations for tickets on Fundo are processed securely via the Razorpay checkout gateway. Since Fundo is running in developer demonstration mode, you can safely use simulated test checkout cards and UPI options to process dummy registrations without actual financial liability."
+      content: "All payments and registrations for tickets on ML Hive are processed securely via the Razorpay checkout gateway. Since ML Hive is running in developer demonstration mode, you can safely use simulated test checkout cards and UPI options to process dummy registrations without actual financial liability."
     },
     {
       icon: <RefreshCw className="text-[#f59e0b]" size={20} />,
       title: "4. Cancellation & Refund Policies",
-      content: "Refund and ticket cancellation policies are determined solely by the event organizer. Fundo acts as a mediator to process refund transactions. For support, transaction details, or refund requests, please contact our support desk directly at fundoooooo12@gmail.com."
+      content: "Refund and ticket cancellation policies are determined solely by the event organizer. ML Hive acts as a mediator to process refund transactions. For support, transaction details, or refund requests, please contact our support desk directly at fundoooooo12@gmail.com."
     },
     {
       icon: <AlertCircle className="text-[#ef4444]" size={20} />,
       title: "5. Prohibited Conduct",
-      content: "You agree not to bypass, disable, or interfere with security-related features of the platform, including reverse-engineering checkout pages or using automated scraping tools to acquire tickets. Violations may result in immediate suspension of your Fundo profile."
+      content: "You agree not to bypass, disable, or interfere with security-related features of the platform, including reverse-engineering checkout pages or using automated scraping tools to acquire tickets. Violations may result in immediate suspension of your ML Hive profile."
     },
     {
       icon: <BookOpen className="text-[#d946ef]" size={20} />,
       title: "6. Limitation of Liability",
-      content: "Fundo is provided on an 'as is' and 'as available' basis. We disclaim all warranties, express or implied. Under no circumstances shall Fundo or its developers be liable for direct, indirect, incidental, or consequential damages resulting from transaction failures, event cancellations, or service interruptions."
+      content: "ML Hive is provided on an 'as is' and 'as available' basis. We disclaim all warranties, express or implied. Under no circumstances shall ML Hive or its developers be liable for direct, indirect, incidental, or consequential damages resulting from transaction failures, event cancellations, or service interruptions."
     }
   ];
 
@@ -53,7 +53,7 @@ export default function Terms() {
       <div className="bg-black/40 backdrop-blur-2xl border border-white/5 border-l-purple-500/20 border-t-purple-500/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] rounded-[2rem] overflow-hidden p-8 md:p-12 space-y-10">
         
         <p className="text-white/70 text-sm leading-relaxed font-sans">
-          These Terms of Service govern your relationship with Fundo (referred to as "us", "we", or "our") concerning our web portal, event registration services, and simulated transaction checkouts. Please read this documentation carefully before continuing to use our application.
+          These Terms of Service govern your relationship with ML Hive (referred to as "us", "we", or "our") concerning our web portal, event registration services, and simulated transaction checkouts. Please read this documentation carefully before continuing to use our application.
         </p>
 
         <div className="space-y-8">

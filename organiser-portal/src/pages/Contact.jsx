@@ -14,11 +14,11 @@ const helpTopics = [
     icon: <Book className="text-[#8155ff]" size={20} />,
     color: 'from-[#8155ff]/20 to-transparent',
     border: 'border-[#8155ff]/30',
-    desc: 'Learn the basics of Fundo and how to manage event payments.',
+    desc: 'Learn the basics of ML Hive and how to manage event payments.',
     articles: [
       {
-        q: "How to set up your Fundo organiser account",
-        a: "To set up your Fundo organiser account, click 'Sign Up' in the top-right corner. Fill in your name, email, and password. Confirm your account by entering the OTP sent to your email. You are then ready to start creating events!"
+        q: "How to set up your ML Hive organiser account",
+        a: "To set up your ML Hive organiser account, click 'Sign Up' in the top-right corner. Fill in your name, email, and password. Confirm your account by entering the OTP sent to your email. You are then ready to start creating events!"
       },
       {
         q: "Creating your first event",
@@ -57,8 +57,8 @@ const helpTopics = [
     desc: 'Understand payment processing, transaction records, and cashouts.',
     articles: [
       {
-        q: "How does Fundo handle payments?",
-        a: "Fundo processes payments using Razorpay. Once a participant pays, the status is updated to SUCCESS, and the funds are credited to your organiser balance."
+        q: "How does ML Hive handle payments?",
+        a: "ML Hive processes payments using Razorpay. Once a participant pays, the status is updated to SUCCESS, and the funds are credited to your organiser balance."
       },
       {
         q: "How long do payouts take?",
@@ -89,7 +89,7 @@ const initialFaqs = [
   },
   {
     q: 'How does real-time transaction tracking work?',
-    a: "Fundo connects via WebSockets (Socket.io) to the backend. When a student registers, the server sends a confirmation event, and your page updates instantly without manual reloading."
+    a: "ML Hive connects via WebSockets (Socket.io) to the backend. When a student registers, the server sends a confirmation event, and your page updates instantly without manual reloading."
   },
   {
     q: 'How do I export registrations to CSV?',

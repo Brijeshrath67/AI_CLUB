@@ -14,7 +14,7 @@ export async function sendOtpService(email) {
 
   await sendEmail({
     to: email,
-    subject: 'Your Fundo OTP',
+    subject: 'Your ML Hive OTP',
     text: `Your OTP is ${otp}. Valid for 5 minutes.`,
     html: `<p>Your OTP is <b>${otp}</b>. Valid for 5 minutes.</p>`,
   });

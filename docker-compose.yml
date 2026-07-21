@@ -4,7 +4,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: fundo-backend
+    container_name: ml-hive-backend
     restart: unless-stopped
     ports:
       - "8000:8000"
@@ -14,37 +14,37 @@ services:
       redis:
         condition: service_healthy
     networks:
-      - fundo
+      - ml-hive
 
   user-portal:
     build:
       context: ./user-portal
       dockerfile: Dockerfile
-    container_name: fundo-user-portal
+    container_name: ml-hive-user-portal
     restart: unless-stopped
     ports:
       - "5173:5173"
     depends_on:
       - backend
     networks:
-      - fundo
+      - ml-hive
 
   organiser-portal:
     build:
       context: ./organiser-portal
       dockerfile: Dockerfile
-    container_name: fundo-organiser-portal
+    container_name: ml-hive-organiser-portal
     restart: unless-stopped
     ports:
       - "3000:3000"
     depends_on:
       - backend
     networks:
-      - fundo
+      - ml-hive
 
   redis:
     image: redis:7-alpine
-    container_name: fundo-redis
+    container_name: ml-hive-redis
     restart: unless-stopped
     ports:
       - "6379:6379"
@@ -56,11 +56,11 @@ services:
       timeout: 5s
       retries: 3
     networks:
-      - fundo
+      - ml-hive
 
 volumes:
   redis_data:
 
 networks:
-  fundo:
+  ml-hive:
     driver: bridge

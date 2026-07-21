@@ -19,16 +19,16 @@ RUN apk add --no-cache openssl
 
 WORKDIR /app
 
-RUN addgroup -g 1001 -S fundo && \
-    adduser  -S fundo -u 1001 -G fundo
+RUN addgroup -g 1001 -S ml-hive && \
+    adduser  -S ml-hive -u 1001 -G ml-hive
 
-COPY --from=builder --chown=fundo:fundo /app/node_modules ./node_modules
-COPY --from=builder --chown=fundo:fundo /app/package.json ./
-COPY --from=builder --chown=fundo:fundo /app/index.js ./
-COPY --from=builder --chown=fundo:fundo /app/prisma ./prisma/
-COPY --from=builder --chown=fundo:fundo /app/src ./src/
+COPY --from=builder --chown=ml-hive:ml-hive /app/node_modules ./node_modules
+COPY --from=builder --chown=ml-hive:ml-hive /app/package.json ./
+COPY --from=builder --chown=ml-hive:ml-hive /app/index.js ./
+COPY --from=builder --chown=ml-hive:ml-hive /app/prisma ./prisma/
+COPY --from=builder --chown=ml-hive:ml-hive /app/src ./src/
 
-USER fundo
+USER ml-hive
 
 EXPOSE 8000
 

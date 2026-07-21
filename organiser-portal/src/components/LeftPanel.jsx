@@ -10,9 +10,9 @@ export default function LeftPanel() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 mb-12 pointer-events-auto hover:opacity-80 transition-opacity w-fit">
           <div className="w-10 h-10 rounded-xl bg-black border border-white/10 flex items-center justify-center shadow-lg shadow-white/10">
-            <img src="/logo.png" alt="Fundo Logo" className="w-6 h-6 object-contain" />
+            <img src="/logo.png" alt="ML Hive Logo" className="w-6 h-6 object-contain" />
           </div>
-          <span className="font-bold text-2xl tracking-tight text-white">Fundo</span>
+          <span className="font-bold text-2xl tracking-tight text-white">ML Hive</span>
         </Link>
 
         {/* Hero Text */}

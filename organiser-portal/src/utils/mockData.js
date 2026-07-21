@@ -13,7 +13,7 @@ const EMAILS = [
 export function getEventRegistrations(event) {
   if (!event || !event.id) return [];
   
-  const key = `fundo_regs_${event.id}`;
+  const key = `ml-hive_regs_${event.id}`;
   const stored = localStorage.getItem(key);
   if (stored) {
     try {
@@ -55,7 +55,7 @@ export function getEventRegistrations(event) {
 }
 
 export function addRealtimeRegistration(eventId, registration) {
-  const key = `fundo_regs_${eventId}`;
+  const key = `ml-hive_regs_${eventId}`;
   let current = [];
   const stored = localStorage.getItem(key);
   if (stored) {

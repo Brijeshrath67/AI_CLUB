@@ -52,7 +52,7 @@ export async function createEventService({ title, description, date, location, p
         ${eventData.isHackathon ? `<li>Hackathon: Yes (Team size: ${minTeamSize || 1}-${maxTeamSize || 5})</li>` : ''}
         ${eventData.code ? `<li>Private Code: <b>${eventData.code}</b></li>` : ''}
       </ul>
-      <p>-- Fundo Team</p>
+      <p>-- ML Hive Team</p>
     `,
   });
 

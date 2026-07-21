@@ -9,7 +9,7 @@ export default function RefundPolicy() {
     {
       icon: <CreditCard className="text-[#8155ff]" size={20} />,
       title: "1. Staging & Sandbox Transactions",
-      content: "All ticketing checkouts processed on Fundo utilize Razorpay developer API testing tokens. Because these checkouts operate in a sandbox environment, no real-world financial transactions take place, and no real currency is collected. Simulated refunds follow similar dry-run staging sequences."
+      content: "All ticketing checkouts processed on ML Hive utilize Razorpay developer API testing tokens. Because these checkouts operate in a sandbox environment, no real-world financial transactions take place, and no real currency is collected. Simulated refunds follow similar dry-run staging sequences."
     },
     {
       icon: <Clock className="text-[#10b981]" size={20} />,
@@ -29,7 +29,7 @@ export default function RefundPolicy() {
     {
       icon: <AlertTriangle className="text-[#ef4444]" size={20} />,
       title: "5. Event Cancellations & Postponements",
-      content: "If an event organizer cancels or postpones an event, registered participants will be automatically issued full refunds for the corresponding transactions. Fundo will notify all affected ticket holders via email."
+      content: "If an event organizer cancels or postpones an event, registered participants will be automatically issued full refunds for the corresponding transactions. ML Hive will notify all affected ticket holders via email."
     }
   ];
 
@@ -48,7 +48,7 @@ export default function RefundPolicy() {
       <div className="bg-black/40 backdrop-blur-2xl border border-white/5 border-l-purple-500/20 border-t-purple-500/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] rounded-[2rem] p-8 md:p-12 space-y-10">
         
         <p className="text-white/70 text-sm leading-relaxed font-sans">
-          This Refund Policy outlines the cancellation rules, processing timelines, and support actions for all ticket transactions and registrations handled via the Fundo platform.
+          This Refund Policy outlines the cancellation rules, processing timelines, and support actions for all ticket transactions and registrations handled via the ML Hive platform.
         </p>
 
         <div className="space-y-8">

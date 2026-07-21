@@ -30,7 +30,7 @@ export default function Footer() {
               <div className="w-7 h-7 rounded-[8px] bg-gradient-to-br from-[#8155ff] to-[#6035f5] flex items-center justify-center">
                 <span className="font-bold text-[13px] text-white italic" style={{ fontFamily: 'serif' }}>F</span>
               </div>
-              <span className="font-bold text-lg tracking-tight text-white">Fundo</span>
+              <span className="font-bold text-lg tracking-tight text-white">ML Hive</span>
             </Link>
             <p className="text-[13px] text-white/35 leading-relaxed mb-5 max-w-[220px]">
               The all-in-one platform for college events and seamless payments.
@@ -76,7 +76,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/[0.05] mt-12 pt-6 text-center">
-          <p className="text-[12px] text-white/25 font-medium">© 2026 Fundo. All rights reserved.</p>
+          <p className="text-[12px] text-white/25 font-medium">© 2026 ML Hive. All rights reserved.</p>
         </div>
       </div>
     </footer>
